@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
 		type: 'myExtension',
 		path: 'packages/webview',
 		title: 'My Extension',
-		apiFactory: (webview) => new Bridge(webview),
+		bridgeFactory: (webview) => new Bridge(webview),
 		context,
 	})
 

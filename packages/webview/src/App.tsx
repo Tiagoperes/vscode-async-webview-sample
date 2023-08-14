@@ -1,10 +1,10 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { useAPIState, vscode } from './vscode'
+import { useBridgeState, vscode } from './vscode'
 
 function App() {
-  const [count = 0, setCount] = useAPIState('counter')
+  const [count = 0, setCount] = useBridgeState('counter')
 
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
       <div className="card">
         <button onClick={() => {
           setCount(count + 1)
-          vscode.api.showMessage(`The counter is at: ${count + 1}.`)
+          vscode.bridge.showMessage(`The counter is at: ${count + 1}.`)
         }}>
           count is {count}
         </button>

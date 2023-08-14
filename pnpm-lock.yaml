@@ -20,8 +20,8 @@ importers:
   packages/extension:
     dependencies:
       '@stack-spot/vscode-async-webview-backend':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.0
+        version: 0.3.0
     devDependencies:
       '@rollup/plugin-commonjs':
         specifier: ^25.0.3
@@ -78,11 +78,11 @@ importers:
   packages/webview:
     dependencies:
       '@stack-spot/vscode-async-webview-client':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.0
+        version: 0.3.0
       '@stack-spot/vscode-async-webview-react':
-        specifier: ^0.2.0
-        version: 0.2.0(@stack-spot/vscode-async-webview-client@0.2.0)(react-dom@18.2.0)(react-scripts@5.0.1)(react@18.2.0)
+        specifier: ^0.3.0
+        version: 0.3.0(@stack-spot/vscode-async-webview-client@0.3.0)(react-dom@18.2.0)(react-scripts@5.0.1)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -2486,35 +2486,35 @@ packages:
       '@sinonjs/commons': 1.8.6
     dev: false
 
-  /@stack-spot/vscode-async-webview-backend@0.2.0:
-    resolution: {integrity: sha512-JqWoSv2O5CI/wcMZnxL9tQslP74WmpCSrzNVdNPbFd/gJD5Ompt/juo8EQZtmmdrJWFj5sZZzO/jd08Y69N0gQ==}
+  /@stack-spot/vscode-async-webview-backend@0.3.0:
+    resolution: {integrity: sha512-lT2/5NzqzD4gsIns22lGii5m2y3JDbSRweknpQSfPGh59VonRpgd57DngXuZlTft7c0It+Ng/F7sXn+cSPJ85w==}
     dependencies:
-      '@stack-spot/vscode-async-webview-shared': 0.2.0
+      '@stack-spot/vscode-async-webview-shared': 0.3.0
       lodash: 4.17.21
     dev: false
 
-  /@stack-spot/vscode-async-webview-client@0.2.0:
-    resolution: {integrity: sha512-CKzTJvKS3LzXp3N66WwoIYa0kMnq62VW5/e+tXFZ1rHBsvkNh290X+hSJg90QWxaZj6tVTcrk2HDdKBArwFQQA==}
+  /@stack-spot/vscode-async-webview-client@0.3.0:
+    resolution: {integrity: sha512-Q6Dif0t7V1jMuYDdggMDsOK9ZvCSkYFaNgThtgq22o1dK9tgaM5yND8AlTWCakMDmTdilfbWNPdpBSd8A9MLrg==}
     dependencies:
-      '@stack-spot/vscode-async-webview-shared': 0.2.0
+      '@stack-spot/vscode-async-webview-shared': 0.3.0
     dev: false
 
-  /@stack-spot/vscode-async-webview-react@0.2.0(@stack-spot/vscode-async-webview-client@0.2.0)(react-dom@18.2.0)(react-scripts@5.0.1)(react@18.2.0):
-    resolution: {integrity: sha512-kD4iLfY0px0kb9WMt8PHm3e//1fl2Vt9Y0IYZ9KphDOyBKiSjzOX4zb77jDXdIquK3iLkwM966qo/KgDXlofuA==}
+  /@stack-spot/vscode-async-webview-react@0.3.0(@stack-spot/vscode-async-webview-client@0.3.0)(react-dom@18.2.0)(react-scripts@5.0.1)(react@18.2.0):
+    resolution: {integrity: sha512-LSzw8ppV84aAWt/NDFBk8gXepbnkt4pRGC7Zl08+Pkswc7T0UeFf7NBsDCZXXf0x4Qjh+y0DwwRS0+2HPthgSQ==}
     peerDependencies:
-      '@stack-spot/vscode-async-webview-client': ^0.2.0
+      '@stack-spot/vscode-async-webview-client': '>=0.3.0'
       react: ^18.2.0
       react-dom: ^18.2.0
       react-scripts: 5.0.1
     dependencies:
-      '@stack-spot/vscode-async-webview-client': 0.2.0
+      '@stack-spot/vscode-async-webview-client': 0.3.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-scripts: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(eslint@8.45.0)(react@18.2.0)(ts-node@10.9.1)(typescript@5.1.3)
     dev: false
 
-  /@stack-spot/vscode-async-webview-shared@0.2.0:
-    resolution: {integrity: sha512-7o1I4KhYOGA7iR1VEnSErlLTfiHAilkCdnkAzE1wt1+iNmg9vXYLrlfPTlrqRUyqX8gbaBykR/yICH9gEvFmXA==}
+  /@stack-spot/vscode-async-webview-shared@0.3.0:
+    resolution: {integrity: sha512-POQptlV83E8FyHAYXIaDfeI8/trFrMrm7FteucxbZwVwaJ5Xj5kDYEYa4VA5MiMkvWpJ6GTfG+PxgPERFmJw1Q==}
     dependencies:
       uid: 2.0.2
     dev: false
@@ -4528,7 +4528,7 @@ packages:
       jest-worker: 27.5.1
       postcss: 8.4.27
       schema-utils: 4.2.0
-      serialize-javascript: 6.0.0
+      serialize-javascript: 6.0.1
       source-map: 0.6.1
       webpack: 5.88.2
     dev: false
@@ -5434,7 +5434,7 @@ packages:
     peerDependencies:
       eslint: ^7.5.0 || ^8.0.0
     dependencies:
-      '@typescript-eslint/utils': 5.59.8(eslint@8.45.0)(typescript@5.1.3)
+      '@typescript-eslint/utils': 5.62.0(eslint@8.45.0)(typescript@5.1.3)
       eslint: 8.45.0
     transitivePeerDependencies:
       - supports-color
@@ -9748,6 +9748,7 @@ packages:
     resolution: {integrity: sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==}
     dependencies:
       randombytes: 2.1.0
+    dev: true
 
   /serialize-javascript@6.0.1:
     resolution: {integrity: sha512-owoXEFjWRllis8/M1Q+Cw5k8ZH40e3zhp/ovX+Xr/vi1qj6QesbyXXViFbpNvWvPNAD62SutwEXavefrLJWj7w==}
